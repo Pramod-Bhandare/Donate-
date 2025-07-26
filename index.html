@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wish - An Ultimate Place to Donate your cloth for needy ones</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header
+        class=" d-flex flex-column gap-2 align-items-center flex-lg-row justify-content-lg-between py-3 px-5 bg-dark text-white">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="The Wish" width="200">
+        </div>
+        <div class="search d-flex gap-1 align-items-center w-max bg-white p-2 border-1 rounded-2">
+            <input type="text" placeholder="Enter something to search" class="w-max h-max border-0 outline-0">
+            <button class="bg-transparent border-0"><i class="bi bi-search"></i></button>
+        </div>
+        <nav class="navbar">
+            <ul class=" list-unstyled d-flex gap-4 align-items-center">
+               
+                <li><a href="./index.html" class="text-decoration-none text-white fs-4">Home</a></li>
+                <li><a href="./Donate.html" target="_blank" class="text-decoration-none text-white fs-4">Donate</a></li>
+                <li><a href="./Events.html" target="_blank" class="text-decoration-none text-white fs-4">Events</a></li>
+                <li><a href="./Contact.html" target="_blank" class="text-decoration-none text-white fs-4">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="filters container mt-4">
+            <select id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Unisex">Unisex</option>
+            </select>
+            <select id="age">
+                <option value="Adult">Adult</option>
+                <option value="Teen">Teen</option>
+                <option value="Child">Child</option>
+            </select>
+            <select id="size">
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+                <option value="XL">Extra large</option>
+                <option value="XXL">Extra Extra large</option>
+            </select>
+        </div>
+        <div id="main" class=" container"></div>
+
+        <section id="contact-section" class="container py-5 d-none">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="contactName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="contactName" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="contactEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="contactEmail" required>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-dark">Send Message</button>
+                </div>
+            </form>
+        </section>
+
+
+    </main>
+    <footer class=" bg-primary-subtle text-black text-center fs-2">
+        This site belongs to THE WISH &copy;2025
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
