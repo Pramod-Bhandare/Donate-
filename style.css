@@ -1,21 +1,122 @@
-#main{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fa;
+  color: #333;
 }
-#main>div{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 10px 20px 20px gray;
+
+.search {
+  border-radius: 30px !important;
+  padding: 5px 15px;
+  transition: 0.3s;
 }
-#main img{
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+.search input {
+  width: 200px;
+  border: none;
 }
-input:focus{
-    outline: none;
+.search input:focus {
+  outline: none;
+}
+.search:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+.filters select {
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  background: white;
+  transition: 0.3s;
+}
+.filters select:hover {
+  border-color: #007bff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+#main > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#main > div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+
+#main img {
+  border-radius: 15px;
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+
+#main button {
+  align-self: center;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 20px;
+  transition: 0.3s;
+}
+#main button:hover {
+  background: #0056b3;
+}
+#contact-section form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+#contact-section input,
+#contact-section textarea {
+  border-radius: 12px;
+}
+
+footer {
+  padding: 20px;
+  font-size: 18px;
+  background: #212529 !important;
+  color: white !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  #main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  #main {
+    grid-template-columns: 1fr;
+  }
+  .search input {
+    width: 140px;
+  }
 }
