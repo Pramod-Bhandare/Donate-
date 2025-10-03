@@ -123,8 +123,7 @@ let data = [
 
 async function fetchData(url) {
 	try {
-		const res = await fetch(url)
-		// const data = await res.json();
+		const res = await fetch(url);
 
 		console.log(data)
 		displayData(data)
